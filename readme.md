@@ -6,7 +6,7 @@ tsd reinstall
 
 **build:**
 ```
-npm install -g typescript@1.5.0-beta
+npm install -g typescript
 tsc
 ```
 
@@ -20,17 +20,14 @@ tsc
  http-server -p 8080
  ```
 
-**update Visual Studio:**
+**Visual Studio Code setup:**
 
-open a powershell command prompt in the ngconf2015demo folder and run one of the below commands/scripts
-- Visual Studio 2013 `vs\VSDevMode.ps1 -vsVersion 12 -tsScript tsc\`
-- Visual Studio 2015 CTP `vs\VSDevMode.ps1 -vsVersion 14 -tsScript tsc\`
+- First of all make sure that `code` is available from your terminal.
 
-restart or start visual studio. Under File->Open->Web Site... open the ngconf2015demo folder
+- Follow these steps for your particular OS: https://code.visualstudio.com/Docs/setup
 
-**update Sublime Text:**
+- After that, jus clone the repo and execute command from your terminal:
 
-If you are using [Package Control](https://packagecontrol.io/) for Sublime Text, simply 
-install the `TypeScript` package.
-
-Alternatively, you can clone the [repo](https://github.com/Microsoft/TypeScript-Sublime-Plugin) directly.
+```bash
+code ngconf2015demo
+```
